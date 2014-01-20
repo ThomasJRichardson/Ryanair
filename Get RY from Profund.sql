@@ -51,9 +51,9 @@ go
 
 	left outer join APTTEST.dbo.IntegerHistory EEJC on EEJC.ParentUID = EE.EmployeeUID and EEJC.CatID = 1002
 
-	left outer join APTTEST.dbo.CurrencyHistory SAL1 on SAL1.ParentUID = EE.EmployeeUID and SAL1.CatID = 201
-	left outer join APTTEST.dbo.CurrencyHistory SAL2 on SAL2.ParentUID = EE.EmployeeUID and SAL2.CatID = 203
-	left outer join APTTEST.dbo.CurrencyHistory SAL3 on SAL3.ParentUID = EE.EmployeeUID and SAL3.CatID = 25143
+	left outer join APTTEST.dbo.CurrencyHistory SAL1 on SAL1.ParentUID = EE.EmployeeUID and SAL1.CatID = 201 --BASSAL
+	left outer join APTTEST.dbo.CurrencyHistory SAL2 on SAL2.ParentUID = EE.EmployeeUID and SAL2.CatID = 203 --PENSAL
+	left outer join APTTEST.dbo.CurrencyHistory SAL3 on SAL3.ParentUID = EE.EmployeeUID and SAL3.CatID = 25143 --SCHEMSALRY
 
 	left outer join APTTEST.dbo.JobClass JC1 on JC1.JobClassUID = EEJC.Value
 
